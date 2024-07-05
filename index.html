@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <article></article>
+    <link href="css/master.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--====================================start home page======================================-->
+    <div class="home" id="Home">
+        <div class="continer">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h2>gamepro</h2>
+                </div>
+                
+                <nav>
+                    <div class="list"><i class="fa-solid fa-bars"></i></div>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Pricing">Pricing</a></li>
+                        <li><a href="#Faq">Faq</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                          const question = document.querySelector('.home header nav .list');
+                          const menu = document.querySelector('.home header nav ul');
+                          
+                          question.addEventListener('click', () => {
+                              menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'grid' : 'none';
+                          });
+                          });
+      
+                    </script>
+                </nav>
+
+                <div class="button">sign up</div>
+                
+            </header>
+            <section>
+                <div class="text">
+                    <div class="side">
+                        <h1>UNLIMITED GAME'S HEAVEN</h1>
+                        <p>Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing elit.<br> Officiis Voluptatum Similique Nihil Minus Magnam</p>
+                    </div>
+                    <div class="button">play now</div>
+                </div>
+                <img src="photos/image22.png" style="width: 38%;" alt="Moving Image" class="moving-image">
+            </section>
+        </div>
+    </div>
+
+    <script>
+       document.addEventListener('scroll', function() {
+            var header = document.querySelector('.home header');
+            if (window.scrollY > 50) { // Adjust the value to the point where you want the color to change
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!--====================================end home page======================================-->
+<!--
+    <div id="menu_btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+-->
+    <!--====================================start features page======================================-->
+    <div class="features" id="features">
+        <header>
+            <h1>OUR<span> FEATURES</span></h1>
+        </header>
+        <section>
+            <div class="part1">
+                <img src="photos/image.png" class="img1">
+                <h2>New Events Everyday</h2>
+                <p>Leram ipsum Door Kit Amet<br> Consectetur Adipisicing Fir <br> Tanema Funciar</p>
+            </div>
+            <div class="part2">
+                <img src="photos/image1.png" class="img2">
+                <h2>Compatible With Any Devices</h2>
+                <p>Leram ipsum Door Kit Amet<br> Consectetur Adipisicing Fir <br> Tanema Funciar</p>
+            </div>
+            <div class="part3">
+                <img src="photos/image2.png" class="img3">
+                <h2>Online And Offline Modes</h2>
+                <p>Leram ipsum Door Kit Amet<br> Consectetur Adipisicing Fir <br> Tanema Funciar</p>
+            </div>
+        </section>
+    </div>
+    <!--====================================end features page======================================-->
+
+
+    <!--====================================start about page========================================-->
+    <div class="about" id="About">
+        <div class="continer">
+            <img src="photos/image4.png">
+            <aside>
+                <h1>about us</h1>
+                <p>Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing elit. Officiis Voluptatum Similique Nihil Minus Magnam</p>
+                <div class="button">read more</div>
+            </aside>
+            <img src="photos/image5.png">
+        </div>
+    </div>
+    <!--====================================end about page========================================-->
+
+
+    <!--====================================start top gemes page========================================-->
+
+    <div class="top" id="top">
+        <h1><span>top</span> games</h1>
+        <section>
+            <div class="game">
+                <img src="photos/cat-7928232_1280.png">
+                <p>jackpot</p>
+            </div>
+            <div class="game">
+                <img src="photos/508481-PIDABC-687.jpg">
+                <p>coin flip</p>
+            </div>
+            <div class="game">
+                <img src="photos/3771609mm.jpg">
+            </div>
+            <div class="game">
+                <img src="photos/3826994.jpg">
+            </div>
+            <div class="game">
+                <img src="photos/tattoo_04.jpg">
+                <p>dice</p>
+            </div>
+            <div class="game">
+                <img src="photos/avocado-7207993_1280.jpg">
+                <p>crypto game</p>
+            </div>
+            <div class="game">
+                <img src="photos/3791570.jpg">
+            </div>
+            <div class="game">
+                <img src="photos/10315120.jpg">
+            </div>
+        </section>
+    </div>
+    <!--====================================end top gemes page========================================-->
+
+    <!--====================================start info page========================================-->
+    <div class="info">
+        <div class="one">
+            <img src="photos/pngegg1.png" style="width: 81px;padding-top: 10px;">
+            <p style="margin-top: 39px;">Daily Rewards</p>
+        </div>
+        <div class="one">
+            <img src="photos/—Pngtree—cartoon pink piggy bank_4603249.png">
+            <p>Multi Accounts</p>
+        </div>
+        <div class="one">
+            <img src="photos/—Pngtree—payment security payment transaction security_6697724.png">
+            <p>Unlimited Games</p>
+        </div>
+        <div class="one">
+            <img src="photos/pngegg.png">
+            <p>Secure Payments</p>
+        </div>
+    </div>
+    <!--====================================end info  page========================================-->
+
+    <!--====================================start price page========================================-->
+    <div class="price" id="Pricing">
+        <h1>our<span> prices</span></h1>
+        <section>
+            <div class="sale">
+                <h4>Silver</h4>
+                <aside>
+                    <p>$<span>9.99</span></p>
+                    <div class="shape">For 3 Months</div>
+                    <article>
+                        <i class="fa-solid fa-check"></i>
+                        <p>15 Days Free Trial</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>Cancel Anytime</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>24/7 Full Support</p>
+                        <i class="fa-solid fa-xmark" style="color: red;"></i>
+                        <p>Daily Coins/Diamonds</p>
+                        <i class="fa-solid fa-xmark" style="color: red;"></i>
+                        <p>Premium Games Access</p>
+                    </article>
+                    <div class="button">check out</div>
+                </aside>
+            </div>
+
+            <div class="sale">
+                <h4>Gold</h4>
+                <aside>
+                    <p>$<span>49.99</span></p>
+                    <div class="shape">For 6 Months</div>
+                    <article>
+                        <i class="fa-solid fa-check"></i>
+                        <p>15 Days Free Trial</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>Cancel Anytime</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>24/7 Full Support</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>Daily Coins/Diamonds</p>
+                        <i class="fa-solid fa-xmark" style="color: red;"></i>
+                        <p>Premium Games Access</p>
+                    </article>
+                    <div class="button">check out</div>
+                </aside>
+            </div>
+
+            <div class="sale">
+                <h4>Diamond</h4>
+                <aside>
+                    <p>$<span>99.99</span></p>
+                    <div class="shape">For 12 Months</div>
+                    <article>
+                        <i class="fa-solid fa-check"></i>
+                        <p>15 Days Free Trial</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>Cancel Anytime</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>24/7 Full Support</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>Daily Coins/Diamonds</p>
+                        <i class="fa-solid fa-check"></i>
+                        <p>Premium Games Access</p>
+                    </article>
+                    <div class="button">check out</div>
+                </aside>
+            </div>
+        </section>
+    </div>
+    <!--====================================end price  page========================================-->
+
+    <!--====================================start Faq page========================================-->
+
+    <div id="Faq" class="faq">
+        <h1><span>f</span>requently <span>a</span>sked <span>q</span>uestions</h1>
+        <section>
+            <div class="box">
+                <article>
+                    <h3>how to play?</h3>
+                    <i class="fa-solid fa-plus" style="transition: .2s linear;"></i>
+                </article>
+                <div class="content">
+                    <p>1 Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptates, Delectus Voluptate Vitae Doloremque Temporibus, Beatae Quam<br> Non Perspiciatis Saepe Harum Accusamus Repudiandae Minus Nesciunt A Ea Ad Commodi Architecto! Numquam!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <article>
+                    <h3>How To Invite Freinds?</h3>
+                    <i class="fa-solid fa-plus" style="transition: .2s linear;"></i>
+                </article>
+                <div class="content ">
+                    <p>2 Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptates, Delectus Voluptate Vitae Doloremque Temporibus, Beatae Quam<br> Non Perspiciatis Saepe Harum Accusamus Repudiandae Minus Nesciunt A Ea Ad Commodi Architecto! Numquam!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <article>
+                    <h3>How Many Complete Daily Quests?</h3>
+                    <i class="fa-solid fa-plus" style="transition: .2s linear;"></i>
+                </article>
+                <div class="content ">
+                    <p>3 Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptates, Delectus Voluptate Vitae Doloremque Temporibus, Beatae Quam<br> Non Perspiciatis Saepe Harum Accusamus Repudiandae Minus Nesciunt A Ea Ad Commodi Architecto! Numquam!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <article>
+                    <h3>How To Enter Special Event Games?</h3>
+                    <i class="fa-solid fa-plus" style="transition: .2s linear;"></i>
+                </article>
+                <div class="content ">
+                    <p>4 Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptates, Delectus Voluptate Vitae Doloremque Temporibus, Beatae Quam<br> Non Perspiciatis Saepe Harum Accusamus Repudiandae Minus Nesciunt A Ea Ad Commodi Architecto! Numquam!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <article>
+                    <h3>Does It Work With Low Speed Internet?</h3>
+                    <i class="fa-solid fa-plus" style="transition: .2s linear;"></i>
+                </article>
+                <div class="content ">
+                    <p>5 Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptates, Delectus Voluptate Vitae Doloremque Temporibus, Beatae Quam<br> Non Perspiciatis Saepe Harum Accusamus Repudiandae Minus Nesciunt A Ea Ad Commodi Architecto! Numquam!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const boxes = document.querySelectorAll('.faq .box');
+
+            boxes.forEach(box => {
+                box.addEventListener('click', function() {
+                    // Toggle active class on the box
+                    this.classList.toggle('active');
+
+                    // Toggle active class on the content and icon inside the box
+                    const content = this.querySelector('.content');
+                    content.classList.toggle('active');
+
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('fa-plus');
+                    icon.classList.toggle('fa-minus');
+                });
+            });
+        });
+    </script>
+    
+
+
+    <!--====================================end Faq  page========================================-->
+
+    <!--====================================start contact page===================================-->
+   
+    
+    <div id="contact" class="contact">
+        <h1><span>contact</span> us</h1>
+        <section>
+            <div class="part1">
+                <img src="photos/pngegg22.png">
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>example@gmail.com</p>
+                    <p>info@gmail.com</p>
+                </div>
+            </div>
+            <div class="part2">
+                <img src="photos/—Pngtree—call vector icon_3722539.png">
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>123-456-7890</p>
+                    <p>111-222-3333</p> 
+                </div>
+            </div>
+            <div class="part3">
+                <img src="photos/—Pngtree—vector location icon_4231903.png">
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>a-1 building, andheri west,</p>
+                    <p>mumbai, india-123457</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--====================================end contact  page========================================-->
+
+    <!--====================================start get page===========================================-->
+    <div class="get">
+        <h1><span>get</span> in touch</h1>
+        <section>
+            <form>
+                <div class="inputs">
+                    <input type="text" placeholder="your name"> 
+                    <input type="email"placeholder="your email">
+                    <input type="text" placeholder="your phone">
+                    <input type="text" placeholder="your country">
+                </div>
+                <textarea placeholder="your message"></textarea>
+            </form>
+            <div class="button">
+                <input value="send message" type="submit"> 
+            </div>
+        </section>
+    </div>
+
+    <!--====================================end get  page========================================-->
+
+    <!--====================================start footer page====================================-->
+
+    <footer>
+       <div class="container">
+        <section>
+            <div class="link">
+                <h2>Quick Links</h2>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Prices</a>
+                <a href="#">Faq</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="link">
+                <h2>Terms Of Use</h2>
+                <p>Lorem Ipsum Dolor Sit Amet<br> Consectetur, Adipisicing Elit. Ex,<br> Numquam?</p>
+                <div class="icons">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+            </div>
+            <div class="link">
+                <h2>Useful Links</h2>
+                <a href="#">User Login</a>
+                <a href="#">New Updates</a>
+                <a href="#">Buy Battle Pass</a>
+                <a href="#">Other Services</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </section>
+        <h1>Copyright © 2024 | All Rights Reserved.</h1>
+       </div>
+    </footer>
+    <!--====================================end footer  page========================================-->
+    
+
+    <script src="master.js">
+        
+    </script>
+</html>
+</body>

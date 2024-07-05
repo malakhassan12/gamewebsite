@@ -1,0 +1,2121 @@
+html{
+
+    scroll-behavior: smooth;/*newwwwwwwwwwwwwwwwwwwwwwww*/
+    font-size: 62.5%;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+  
+    background: var(--black);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+:root{
+    --main-color:#e056fd;
+    --black:#090029;
+    --bg-color:#14074B;
+    --white:#fff;
+    --light-white:rgba(255,255,255,0.8);
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.3);
+    --border:0.2rem solid rgba(255,255,255,0.1);
+
+}
+/*===========================================home page==============================================*/
+::-webkit-scrollbar{
+
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+
+    background: var(--white);
+}
+
+
+.home{
+    background-image: url("../photos/6034768.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 819px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-attachment: fixed;
+}
+.home .continer{
+    background-color: rgba(0, 0, 0, 0.212);
+    width: 100%;
+    height: 819px;
+}
+.home header{
+  color: white;
+  justify-content: center;
+  background-color: transparent;
+  display: flex;
+  gap: 100px;
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  z-index: 1000; /* Ensure header stays above other content */
+  transition: background-color 1s ease;
+}
+.home header.scrolled {
+    background-color: var(--bg-color); /* Change to desired color */
+}
+
+.home header .logo{
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+    position: relative;
+    color: var(--white);
+}
+.home header .logo h2{
+    text-transform: capitalize;
+}
+.home header .logo i{
+    content: "\f091";
+    color: var(--main-color);
+    position: absolute;
+    margin-top: 35px;
+    margin-left: -43px;
+}
+
+.home header .list{
+    display: none;
+   
+}
+.home header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 63px;
+}
+.home header nav ul a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 23px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.home header nav ul a:hover{
+    color: var(--main-color);
+}
+.home header .button{
+    font-size: 23px;
+    margin-top: 13px;
+    text-transform: capitalize;
+    border: 2px solid var(--main-color);
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    padding-bottom: 0;
+    width: 100px;
+    height: 33px;
+    color: var(--main-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s linear;
+}
+.home header .button::before{
+    content: "";
+    width: 0;
+    height: 33px;
+    position: absolute;
+    background-color: var(--main-color);
+    margin-left: 0px;
+    z-index: -1;
+    transition: 0.2s linear;
+    top: 0;
+    right: 0;
+    
+}
+.home header .button:hover{
+    color: var(--white);
+}
+.home header .button:hover:before{
+    width: 100%;
+    left: 0;
+    
+}
+.home section{
+    width: 100%;
+    height: 818px;
+}
+.home section .text{
+    position: relative;
+    font-size: 24px;
+    color: white;
+    margin-left: 82px;
+    display: grid;
+    width: 50%;
+    z-index: 0;
+    top: 352px;
+}
+
+.home section .text .button{
+    font-size: 23px;
+    margin-top: 13px;
+    text-transform: capitalize;
+    border: 2px solid var(--main-color);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 0;
+    width: 140px;
+    height: 33px;
+    color: var(--main-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s linear;
+    text-align: center;
+   text-transform: capitalize;
+}
+.home section .text .button::before{
+    content: "";
+    width: 0;
+    height: 33px;
+    position: absolute;
+    background-color: var(--main-color);
+    margin-left: 0px;
+    z-index: -1;
+    transition: 0.2s linear;
+    top: 0;
+    right: 0;
+    
+}
+.home section .text .button:hover{
+    color: var(--white);
+}
+.home section .text .button:hover:before{
+    width: 100%;
+    left: 0;
+    
+}
+.moving-image {
+    position: relative;
+    animation: upAndDown 5s ease-in-out infinite;
+    margin-left: 689px;
+    margin-top: 30px;
+}
+@keyframes upAndDown {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 100px; /* Adjust the vertical distance here */
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+
+
+@media (max-width:576px) {
+        
+    .home{
+        background-image: url("../photos/photo_2024-06-30_11-10-32.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 819px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .home .continer{
+        background-color: rgba(0, 0, 0, 0.212);
+        width: 100%;
+        height: 819px;
+    }
+    .home header{
+        color: white;
+        justify-content: center;
+        background-color: transparent;
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        position: fixed;
+        height: 100px;
+        z-index: 1000; /* Ensure header stays above other content */
+
+    }
+    .home header .active{
+        background: var(--bg-color);
+        box-shadow: var(--box-shadow);
+    }
+    .home header .logo{
+        display: flex;
+        font-size: 12px;
+        cursor: pointer;
+        margin-top: -10px;
+        position: relative;
+        color: var(--white);
+    }
+    .home header .logo h2{
+        text-transform: capitalize;
+    }
+    .home header .logo i{
+        content: "\f091";
+        color: var(--main-color);
+        position: absolute;
+        margin-top: 19px;
+        margin-left: -23px;
+    }
+    .home header nav{
+        display: grid;
+        justify-content: center;
+        height: 262px;
+        gap: 10px;
+        margin-top: 5px;
+    }
+    .home header .list{
+        display: inline-block;
+       
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .home header nav ul{
+        display: none;
+        list-style: none;
+        gap: 24px;
+    }
+    .home header nav ul a{
+        text-decoration: none;
+        color: var(--main-color);
+        font-size: 17px;
+        text-transform: capitalize;
+        transition: 0.3s;
+    }
+    .home header nav ul a:hover{
+        color: var(--main-color);
+    }
+    .home header .button{
+        font-size: 16px;
+        margin-top: 13px;
+        text-transform: capitalize;
+        border: 2px solid var(--main-color);
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: center;
+        padding-bottom: 0;
+        width: 69px;
+        height: 23px;
+        color: var(--main-color);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        transition: 0.2s linear;
+        margin-top: 6px;
+    }
+    .home header .button::before{
+        content: "";
+        width: 0;
+        height: 33px;
+        position: absolute;
+        background-color: var(--main-color);
+        margin-left: 0px;
+        z-index: -1;
+        transition: 0.2s linear;
+        top: 0;
+        right: 0;
+        
+    }
+    .home header .button:hover{
+        color: var(--white);
+    }
+    .home header .button:hover:before{
+        width: 100%;
+        left: 0;
+        
+    }
+    .home section{
+        width: 100%;
+        height: 818px;
+    }
+    .home section .text{
+        position: absolute;
+        margin-top: 229px;
+        font-size: 24px;
+        color: white;
+        margin-left: 82px;
+        display: grid;
+        width: 50%;
+        top: 0;
+    }
+   
+    .home section .text .button{
+        font-size: 23px;
+        margin-top: 13px;
+        text-transform: capitalize;
+        border: 2px solid var(--main-color);
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 0;
+        width: 140px;
+        height: 33px;
+        color: var(--main-color);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        transition: 0.2s linear;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .home section .text .button::before{
+        content: "";
+        width: 0;
+        height: 33px;
+        position: absolute;
+        background-color: var(--main-color);
+        margin-left: 0px;
+        z-index: -1;
+        transition: 0.2s linear;
+        top: 0;
+        right: 0;
+        
+    }
+    .home section .text .button:hover{
+        color: var(--white);
+    }
+    .home section .text .button:hover:before{
+        width: 100%;
+        left: 0;
+        
+    }
+    .moving-image {
+        position: relative;
+        display: none;
+        margin-left: 0;
+
+    }
+    
+    
+}
+/*======================================features page==========================================*/
+
+.features{
+    display: grid;
+    gap: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+}
+.features header{
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+}
+.features header span{
+    color: var(--main-color);
+}
+
+
+.features section{
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+.features section .part2{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+    font-size: 15px;
+    text-transform: capitalize;
+    z-index: -1;
+    position: relative;
+
+}
+.features section .part3{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+    font-size: 15px;
+    text-transform: capitalize;
+    z-index: -1;
+    position: relative;
+}
+.features section .part1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+    font-size: 15px;
+    text-transform: capitalize;
+    z-index: -1;
+    position: relative;
+}
+.features section .part2::before{
+
+    content: "";
+    position: absolute;
+    width: 334px;
+    height: 278px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 240px;
+    border-bottom-left-radius: 44px;
+    border-bottom: 6px solid #d92948;
+    
+    
+}
+
+.features section .part1::before{
+   
+
+    content: "";
+    position: absolute;
+    width: 334px;
+    height: 310px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 177px;
+    border-bottom-left-radius: 140px;
+    border-bottom: 10px solid #d92948;
+}
+.features section .part3::before{
+    content: "";
+    position: absolute;
+    width: 334px;
+    height: 278px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 84px;
+    border-bottom-left-radius: 208px;
+    border-bottom: 6px solid #d92948;
+}
+
+
+.features section .part1 .img1{
+    width: 301px;
+    padding-bottom: 57px;
+    /*clip-path: polygon(96% 5%, 95% 8%, 95% 8%, 90% 20%, 90% 20%, 84% 33%, 80% 41%, 74% 48%, 69% 53%, 63% 60%, 55% 64%, 48% 68%, 41% 70%, 35% 71%, 26% 70%, 20% 71%, 13% 72%, 8% 72%, 3% 72%, 3% 62%, 2% 66%, 3% 58%, 2% 48%, 2% 53%, 2% 44%, 2% 40%, 1% 34%, 2% 29%, 3% 21%, 4% 16%, 4% 12%, 3% 7%, 6% 3%, 12% 2%, 20% 1%, 45% 1%, 45% 1%, 63% 1%, 82% 1%, 89% 0%, 33% 1%, 75% 1%);*/
+
+
+}
+.features section .part2 .img2{
+    width: 301px;
+    /*clip-path: polygon(96% 5%, 95% 8%, 95% 8%, 90% 20%, 90% 20%, 84% 33%, 80% 41%, 74% 48%, 69% 53%, 63% 60%, 55% 64%, 48% 68%, 41% 70%, 35% 71%, 26% 70%, 20% 71%, 13% 72%, 8% 72%, 3% 72%, 3% 62%, 2% 66%, 3% 58%, 2% 48%, 2% 53%, 2% 44%, 2% 40%, 1% 34%, 2% 29%, 3% 21%, 4% 16%, 4% 12%, 3% 7%, 6% 3%, 12% 2%, 20% 1%, 45% 1%, 45% 1%, 63% 1%, 82% 1%, 89% 0%, 33% 1%, 75% 1%);*/
+
+
+}
+.features section .part3 .img3{
+    width: 301px;
+    padding-bottom: 38px;
+
+    /*clip-path: polygon(96% 5%, 95% 8%, 95% 8%, 90% 20%, 90% 20%, 84% 33%, 80% 41%, 74% 48%, 69% 53%, 63% 60%, 55% 64%, 48% 68%, 41% 70%, 35% 71%, 26% 70%, 20% 71%, 13% 72%, 8% 72%, 3% 72%, 3% 62%, 2% 66%, 3% 58%, 2% 48%, 2% 53%, 2% 44%, 2% 40%, 1% 34%, 2% 29%, 3% 21%, 4% 16%, 4% 12%, 3% 7%, 6% 3%, 12% 2%, 20% 1%, 45% 1%, 45% 1%, 63% 1%, 82% 1%, 89% 0%, 33% 1%, 75% 1%);*/
+
+
+}
+
+@media (max-width:576px) {
+        
+    .features{
+        display: grid;
+        gap: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .features header{
+        text-align: center;
+        color: var(--white);
+        font-size: 20px;
+    }
+    .features header span{
+        color: var(--main-color);
+    }
+  
+    .features section{
+        display: grid;
+        justify-content: center;
+        gap: 44px;
+    }
+    .features section .part2{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--white);
+        font-size: 15px;
+        text-transform: capitalize;
+        z-index: -1;
+        position: relative;
+
+    }
+    .features section .part3{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--white);
+        font-size: 15px;
+        text-transform: capitalize;
+        z-index: -1;
+        position: relative;
+    }
+    .features section .part1{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--white);
+        font-size: 15px;
+        text-transform: capitalize;
+        z-index: -1;
+        position: relative;
+    }
+    .features section .part2::before{
+
+        content: "";
+        position: absolute;
+        width: 334px;
+        height: 278px;
+        background-color: var(--bg-color);
+        z-index: -1;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 240px;
+        border-bottom-left-radius: 44px;
+        border-bottom: 6px solid #d92948;
+        
+        
+    }
+
+    .features section .part1::before{
+    
+
+        content: "";
+        position: absolute;
+        width: 334px;
+        height: 310px;
+        background-color: var(--bg-color);
+        z-index: -1;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 177px;
+        border-bottom-left-radius: 140px;
+        border-bottom: 10px solid #d92948;
+    }
+    .features section .part3::before{
+        content: "";
+        position: absolute;
+        width: 334px;
+        height: 278px;
+        background-color: var(--bg-color);
+        z-index: -1;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 84px;
+        border-bottom-left-radius: 208px;
+        border-bottom: 6px solid #d92948;
+    }
+   
+
+    .features section .part1 .img1{
+        width: 301px;
+        padding-bottom: 57px;
+        /*clip-path: polygon(96% 5%, 95% 8%, 95% 8%, 90% 20%, 90% 20%, 84% 33%, 80% 41%, 74% 48%, 69% 53%, 63% 60%, 55% 64%, 48% 68%, 41% 70%, 35% 71%, 26% 70%, 20% 71%, 13% 72%, 8% 72%, 3% 72%, 3% 62%, 2% 66%, 3% 58%, 2% 48%, 2% 53%, 2% 44%, 2% 40%, 1% 34%, 2% 29%, 3% 21%, 4% 16%, 4% 12%, 3% 7%, 6% 3%, 12% 2%, 20% 1%, 45% 1%, 45% 1%, 63% 1%, 82% 1%, 89% 0%, 33% 1%, 75% 1%);*/
+
+
+    }
+    .features section .part2 .img2{
+        width: 301px;
+        /*clip-path: polygon(96% 5%, 95% 8%, 95% 8%, 90% 20%, 90% 20%, 84% 33%, 80% 41%, 74% 48%, 69% 53%, 63% 60%, 55% 64%, 48% 68%, 41% 70%, 35% 71%, 26% 70%, 20% 71%, 13% 72%, 8% 72%, 3% 72%, 3% 62%, 2% 66%, 3% 58%, 2% 48%, 2% 53%, 2% 44%, 2% 40%, 1% 34%, 2% 29%, 3% 21%, 4% 16%, 4% 12%, 3% 7%, 6% 3%, 12% 2%, 20% 1%, 45% 1%, 45% 1%, 63% 1%, 82% 1%, 89% 0%, 33% 1%, 75% 1%);*/
+
+
+    }
+    .features section .part3 .img3{
+        width: 301px;
+        padding-bottom: 38px;
+
+        /*clip-path: polygon(96% 5%, 95% 8%, 95% 8%, 90% 20%, 90% 20%, 84% 33%, 80% 41%, 74% 48%, 69% 53%, 63% 60%, 55% 64%, 48% 68%, 41% 70%, 35% 71%, 26% 70%, 20% 71%, 13% 72%, 8% 72%, 3% 72%, 3% 62%, 2% 66%, 3% 58%, 2% 48%, 2% 53%, 2% 44%, 2% 40%, 1% 34%, 2% 29%, 3% 21%, 4% 16%, 4% 12%, 3% 7%, 6% 3%, 12% 2%, 20% 1%, 45% 1%, 45% 1%, 63% 1%, 82% 1%, 89% 0%, 33% 1%, 75% 1%);*/
+
+
+    }
+}
+
+
+
+
+
+
+/*======================================about page==========================================*/
+.about{
+    background-image: url("../photos/daca5d12-1779-4167-b480-e78a0cb77223.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 275px;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-attachment: fixed;/*newwwwwwwwwwwwwwww*/
+}
+.about .continer{
+    background-color: #0000007a;
+    width: 100%;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.about .continer aside{
+    text-align: center;
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+
+.about .continer aside .button{
+    font-size: 23px;
+    margin-top: 13px;
+    text-transform: capitalize;
+    border: 2px solid var(--main-color);
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    padding-bottom: 0;
+    width: 129px;
+    height: 33px;
+    color: var(--main-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s linear;
+    margin: 0 auto;
+}
+.about .continer aside .button::before{
+    content: "";
+    width: 0;
+    height: 33px;
+    position: absolute;
+    background-color: var(--main-color);
+    margin-left: 0px;
+    z-index: -1;
+    transition: 0.2s linear;
+    top: 0;
+    right: 0;
+    
+}
+.about .continer aside .button:hover{
+    color: var(--white);
+}
+.about .continer aside .button:hover:before{
+    width: 100%;
+    left: 0;
+    
+}
+
+
+
+
+
+@media (max-width:576px) {
+
+
+    .about{
+        background-image: url("../photos/daca5d12-1779-4167-b480-e78a0cb77223.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 859px;
+        margin-top: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        background-attachment: fixed;
+    }
+    .about .continer{
+        background-color: #0000007a;
+        width: 100%;
+        height: 859px;
+        display: grid;
+        justify-content: center;
+    }
+    
+    .about .continer img{
+        width: 98%;
+    }
+    .about .continer aside{
+        text-align: center;
+        color: var(--white);
+        text-transform: capitalize;
+        font-size: 20px;
+        justify-content: center;
+        display: grid;
+    }
+    
+    .about .continer aside .button{
+        font-size: 23px;
+        margin-top: 13px;
+        text-transform: capitalize;
+        border: 2px solid var(--main-color);
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: center;
+        padding-bottom: 0;
+        width: 129px;
+        height: 33px;
+        color: var(--main-color);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        transition: 0.2s linear;
+        margin: 0 auto;
+    }
+    .about .continer aside .button::before{
+        content: "";
+        width: 0;
+        height: 33px;
+        position: absolute;
+        background-color: var(--main-color);
+        margin-left: 0px;
+        z-index: -1;
+        transition: 0.2s linear;
+        top: 0;
+        right: 0;
+        
+    }
+    .about .continer aside .button:hover{
+        color: var(--white);
+    }
+    .about .continer aside .button:hover:before{
+        width: 100%;
+        left: 0;
+        
+    }
+    
+    
+
+
+}
+/*======================================top games page==========================================*/
+
+.top{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 762px;
+}
+.top h1{
+    text-align: center;
+    color: var(--white);
+    font-size: 42px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+
+}
+
+
+.top h1 span{
+    color: var(--main-color);
+}
+
+.top section{
+    display: grid;
+    grid-template-columns: repeat(4,237px);
+    grid-template-rows: repeat(4,315px);
+    gap: 19px;
+    width: 100%;
+    height: 677px;
+}
+.top section .game{
+    transition: 0.3s;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+
+
+.top section .game::before{
+    content: "play now";
+    width: 237px;
+    height: 175px;
+    position: absolute;
+    background-color: #0000006e;
+    z-index: 1;
+    color: var(--white);
+    text-align: center;
+    padding-top: 140px;
+    font-size: 31px;
+    text-transform: capitalize;
+    opacity: 0; 
+    transition: opacity 0.3s ; 
+    pointer-events: none;
+}
+.top section .game:hover::before{
+  
+    opacity: 1;
+}
+.top section .game img{
+    width: 237px;
+    height:315px ;
+    transition: transform 0.3s;
+}
+.top section .game img:hover{
+    transform: scale(1.1);
+}
+.top section .game p{
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--white);
+    text-transform: capitalize;
+    padding-left: 20px;
+    position: absolute; 
+    bottom: 0; 
+    z-index: 0;
+    margin: 0; 
+   
+}
+
+@media (max-width:576px){
+        
+    .top{
+        display: grid;
+        justify-content: center;
+        margin-top: 108px;
+        height: 3000px;
+        width: 100%;
+    }
+    .top h1{
+        text-align: center;
+        color: var(--white);
+        font-size: 42px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+    
+    
+    .top h1 span{
+        color: var(--main-color);
+    }
+    .top section{
+        display: grid;
+        grid-template-columns: repeat(1,237px);
+        grid-template-rows: repeat(4,315px);
+        gap: 19px;
+        width: 100%;
+        height: 2885px;
+    }
+    .top section .game{
+        transition: 0.3s;
+        overflow: hidden;
+        background-size: cover;
+        position: relative;
+        border-radius: 20px;
+    }
+
+
+    .top section .game::before{
+        content: "play now";
+        width: 237px;
+        height: 379px;
+        position: absolute;
+        background-color: #0000006e;
+        z-index: 1;
+        color: var(--white);
+        text-align: center;
+        padding-top: 140px;
+        font-size: 31px;
+        text-transform: capitalize;
+        opacity: 0; 
+        transition: opacity 0.3s ; 
+        pointer-events: none;
+    }
+    .top section .game:hover::before{
+    
+        opacity: 1;
+    }
+    .top section .game img{
+        width: 237px;
+        height:379px ;
+        transition: transform 0.3s;
+    }
+    .top section .game img:hover{
+        transform: scale(1.1);
+    }
+    .top section .game p{
+        font-size: 28px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        color: var(--white);
+        text-transform: capitalize;
+        padding-left: 20px;
+        position: absolute; 
+        bottom: 0; 
+        z-index: 0;
+        margin: 0; 
+    
+    }
+
+}
+
+/*======================================info page==========================================*/
+
+
+.info{
+    height: 213px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    gap: 60px;
+    color: var(--white);
+    font-size: 23px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info .one img{
+    width: 100px;
+}
+
+@media (max-width:576px){
+
+
+
+    .info{
+        height: 213px;
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        justify-content: center;
+        background-color: var(--bg-color);
+        gap: 60px;
+        color: var(--white);
+        font-size: 23px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+    }
+    
+  
+    .info .one img{
+        width: 100px;
+    }
+    
+}
+
+
+
+/*======================================price page==========================================*/
+
+.price{
+    width: 100%;
+}
+.price h1{
+    text-align: center;
+    color: var(--white);
+    font-size: 42px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.price h1 span{
+    color: var(--main-color);
+}
+.price section{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.price section .sale{
+    border: 1px solid var(--main-color);
+    width: 336px;
+    height: 589px;
+}
+.price section .sale .button{
+    font-size: 23px;
+    margin-top: 13px;
+    text-transform: capitalize;
+    border: 2px solid var(--main-color);
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    padding-bottom: 0;
+    width: 129px;
+    height: 33px;
+    color: var(--main-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s linear;
+    margin: 0 auto;
+    left: -70px;
+}
+.price section .sale .button::before{
+    content: "";
+    width: 0;
+    height: 33px;
+    position: absolute;
+    background-color: var(--main-color);
+    margin-left: 0px;
+    z-index: -1;
+    transition: 0.2s linear;
+    top: 0;
+    right: 0;
+    
+}
+.price section .sale .button:hover{
+    color: var(--white);
+}
+.price section .sale .button:hover:before{
+    width: 100%;
+    left: 0;
+}
+    
+
+.price section .sale h4{
+    font-size: 30px;
+    text-align: center;
+    color: var(--white);
+}
+.price section .sale::before{
+    content: "";
+    width: 275px;
+    height: 1px;
+    position: absolute;
+    background-color: var(--main-color);
+    margin-top: 109px;
+    margin-left: 31px;
+}
+.price section .sale aside{
+    color: var(--white);
+    display: grid;
+}
+.price section .sale aside p{
+    text-align: center;
+    font-size: 24px;
+}
+.price section .sale aside p span{
+    color: var(--main-color);
+    font-size: 34px;
+}
+.price section .sale aside .shape{
+    text-align: center;
+    border: 1px solid var(--main-color);
+    background-color: var(--bg-color);
+    height: 47px;
+    width: 186px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+  
+}
+.price section .sale aside article{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    padding-left: 20px;
+    margin: 0;
+}
+.price section .sale aside article i{
+    color: green;
+    position: relative;
+    top: 19px;
+    font-size: 23px;
+}
+.price section .sale aside article p{
+    font-size: 18px;
+    text-align: start;
+    position: relative;
+    left: -43px;
+}
+
+
+@media (max-width:576px){
+    
+    .price{
+        width: 100%;
+    }
+    .price h1{
+        text-align: center;
+        color: var(--white);
+        font-size: 42px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+    .price h1 span{
+        color: var(--main-color);
+    }
+    .price section{
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+    }
+    .price section .sale{
+        border: 1px solid var(--main-color);
+        width: 336px;
+        height: 589px;
+    }
+    .price section .sale .button{
+        font-size: 23px;
+        margin-top: 13px;
+        text-transform: capitalize;
+        border: 2px solid var(--main-color);
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: center;
+        padding-bottom: 0;
+        width: 129px;
+        height: 33px;
+        color: var(--main-color);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        transition: 0.2s linear;
+        margin: 0 auto;
+        left: -70px;
+    }
+    .price section .sale .button::before{
+        content: "";
+        width: 0;
+        height: 33px;
+        position: absolute;
+        background-color: var(--main-color);
+        margin-left: 0px;
+        z-index: -1;
+        transition: 0.2s linear;
+        top: 0;
+        right: 0;
+        
+    }
+    .price section .sale .button:hover{
+        color: var(--white);
+    }
+    .price section .sale .button:hover:before{
+        width: 100%;
+        left: 0;
+    }
+        
+
+    .price section .sale h4{
+        font-size: 30px;
+        text-align: center;
+        color: var(--white);
+    }
+    .price section .sale::before{
+        content: "";
+        width: 275px;
+        height: 1px;
+        position: absolute;
+        background-color: var(--main-color);
+        margin-top: 109px;
+        margin-left: 31px;
+    }
+    .price section .sale aside{
+        color: var(--white);
+        display: grid;
+    }
+    .price section .sale aside p{
+        text-align: center;
+        font-size: 24px;
+    }
+    .price section .sale aside p span{
+        color: var(--main-color);
+        font-size: 34px;
+    }
+    .price section .sale aside .shape{
+        text-align: center;
+        border: 1px solid var(--main-color);
+        background-color: var(--bg-color);
+        height: 47px;
+        width: 186px;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        margin-left: 75px;
+    
+    }
+    .price section .sale aside article{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        padding-left: 20px;
+        margin: 0;
+    }
+    .price section .sale aside article i{
+        color: green;
+        position: relative;
+        top: 19px;
+        font-size: 23px;
+    }
+    .price section .sale aside article p{
+        font-size: 18px;
+        text-align: start;
+        position: relative;
+        left: -43px;
+    }
+
+}
+
+
+/*======================================faq page==========================================*/
+
+.faq{
+
+    width: 100%;
+    height: auto;
+
+}
+.faq h1{
+    text-align: center;
+    color: var(--white);
+    font-size: 42px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.faq h1 span{
+    color: var(--main-color);
+}
+.faq section{
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+.faq section .box{
+
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    color: var(--white);
+    height: auto;
+    width: 1038px;
+}
+.faq section .box article{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.faq section .box h3{
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.faq .box .content {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--white);
+    transform: scaleY(0);
+    height: 0;
+    overflow: hidden;
+    transform-origin: top;
+    transition: transform 0.2s linear, height 0.2s linear;
+    opacity: 0;
+}
+
+.faq .box .content.active {
+    transform: scaleY(1);
+    height: auto;
+    padding-top: 1rem;
+    opacity: 1;
+}
+
+.faq .box article i {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.faq .box.active article i {
+    transform: rotate(180deg);
+}
+
+
+@media (max-width:576px){
+    .faq{
+        width: 100%;
+    }
+    .faq h1{
+        text-align: center;
+        color: var(--white);
+        font-size: 42px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+    .faq h1 span{
+        color: var(--main-color);
+    }
+    .faq section{
+        display: grid;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .faq section .box{
+    
+        border: var(--border);
+        border-radius: 0.5rem;
+        padding: 2rem;
+        box-shadow: var(--box-shadow);
+        color: var(--white);
+        width: auto;
+        height: auto;
+    }
+    .faq section .box article{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+   
+    .faq section .box h3{
+        text-transform: capitalize;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+    }
+    
+    
+    .faq .box .content {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: var(--white);
+        transform: scaleY(0);
+        height: 0;
+        overflow: hidden;
+        transform-origin: top;
+        transition: transform 0.2s linear, height 0.2s linear;
+        opacity: 0;
+    }
+    
+    .faq .box .content.active {
+        transform: scaleY(1);
+        height: auto;
+        padding-top: 1rem;
+        opacity: 1;
+    }
+    
+    .faq .box article i {
+        color: #fff;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .faq .box.active article i {
+        transform: rotate(180deg);
+    }
+    
+}
+/*======================================contact page==========================================*/
+
+
+.contact{
+
+    width: 100%;
+    height: auto;
+}
+.contact h1{
+    text-align: center;
+    color: var(--white);
+    font-size: 42px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.contact h1 span{
+    color: var(--main-color);
+}
+
+.contact section{
+    display: flex;
+    justify-content: center;
+    gap: 258px;
+    width: 100%;
+    height: 331px;
+}
+.contact section .part2{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+    font-size: 15px;
+    text-transform: capitalize;
+    z-index: -1;
+    position: relative;
+
+}
+.contact section .part3{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+    font-size: 15px;
+    text-transform: capitalize;
+    z-index: -1;
+    position: relative;
+}
+.contact section .part1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+    font-size: 15px;
+    text-transform: capitalize;
+    z-index: -1;
+    position: relative;
+}
+
+.contact section .part2::before{
+
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 127px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 240px;
+    border-bottom-left-radius: 44px;
+    border-bottom: 6px solid #d92948;
+    left:-70px;
+    
+}
+
+.contact section .part1::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 127px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 177px;
+    border-bottom-left-radius: 140px;
+    border-bottom: 10px solid #d92948;
+    left: -50px;
+}
+.contact section .part3::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 127px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 177px;
+    border-bottom-left-radius: 140px;
+    border-bottom: 10px solid #d92948;
+    left: -50px;
+}
+
+.contact section img{
+    width: 100px;
+}
+
+.contact section .text{
+    margin-top: 54px;
+}
+
+@media (max-width:576px){
+    .contact{
+
+        width: 100%;
+        height: auto;
+    }
+    .contact h1{
+        text-align: center;
+        color: var(--white);
+        font-size: 42px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+    .contact h1 span{
+        color: var(--main-color);
+    }
+    
+    .contact section{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        height: 1136px;
+        gap: 0;
+    }
+    .contact section .part2{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--white);
+        font-size: 15px;
+        text-transform: capitalize;
+        z-index: -1;
+        position: relative;
+    
+    }
+    .contact section .part3{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--white);
+        font-size: 15px;
+        text-transform: capitalize;
+        z-index: -1;
+        position: relative;
+    }
+    .contact section .part1{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--white);
+        font-size: 15px;
+        text-transform: capitalize;
+        z-index: -1;
+        position: relative;
+    }
+    
+    .contact section .part2::before{
+    
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 127px;
+        background-color: var(--bg-color);
+        z-index: -1;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 240px;
+        border-bottom-left-radius: 44px;
+        border-bottom: 6px solid #d92948;
+        left:-70px;
+        
+    }
+    
+    .contact section .part1::before{
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 127px;
+        background-color: var(--bg-color);
+        z-index: -1;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 177px;
+        border-bottom-left-radius: 140px;
+        border-bottom: 10px solid #d92948;
+        left: -50px;
+    }
+    .contact section .part3::before{
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 127px;
+        background-color: var(--bg-color);
+        z-index: -1;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 177px;
+        border-bottom-left-radius: 140px;
+        border-bottom: 10px solid #d92948;
+        left: -50px;
+    }
+    
+    .contact section img{
+        width: 100px;
+    }
+   
+    .contact section .text{
+        margin-top: 54px;
+    }
+   
+}
+/*======================================get page==========================================*/
+.get{
+
+    width: 100%;
+    height: auto;
+}
+.get h1{
+    text-align: center;
+    color: var(--white);
+    font-size: 42px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.get h1 span{
+    color: var(--main-color);
+}
+
+.get section{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    height: 350px;
+}
+
+
+.get section form{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 12px;
+}
+.get section form .inputs{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    gap: 12px;
+}
+.get section form input{
+    color: var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 0.1px solid var(--light-white);
+    padding-left: 10px;
+    width: 508px;
+    height: 44px;
+    font-size: 10px;
+}
+.get section form textarea{
+    color: var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 0.1px solid var(--light-white);
+    padding-left: 10px;
+    width: 1042px;
+    height: 128px;
+    font-size: 10px;
+    padding-top: 16px;
+}
+
+.get section .button {
+    font-size: 16px;
+    margin-top: 13px;
+    text-transform: capitalize;
+    border: 2px solid var(--main-color);
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    padding-bottom: 0;
+    width: 173px;
+    height: 37px;
+    color: var(--main-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s linear;
+    margin-top: 10px;
+    left: 429px;
+    background-color: transparent;
+}
+.get section .button input{
+    background-color: transparent;
+    color: var(--light-white);
+    border: 1px solid transparent;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+    padding-top: 8px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.get section .button{
+    background-color: transparent;
+}
+.get section .button:hover{
+    background-color: var(--main-color);
+}
+
+
+
+@media (max-width:576px){
+    .get{
+        width: 100%;
+    }
+    .get h1{
+        text-align: center;
+        color: var(--white);
+        font-size: 42px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+    .get h1 span{
+        color: var(--main-color);
+    }
+    
+    .get section{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        height: 350px;
+    }
+    
+    
+    .get section form{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        gap: 12px;
+    }
+    .get section form .inputs{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: center;
+        gap: 12px;
+    }
+    .get section form input{
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: 0.1px solid var(--light-white);
+        padding-left: 10px;
+        width: auto;
+        height: auto;
+        font-size: 10px;
+    }
+    .get section form textarea{
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: 0.1px solid var(--light-white);
+        padding-left: 10px;
+        width: auto;
+        height: auto;
+        font-size: 10px;
+        padding-top: 16px;
+    }
+    
+    .get section .button {
+        font-size: 16px;
+        margin-top: 13px;
+        text-transform: capitalize;
+        border: 2px solid var(--main-color);
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: center;
+        padding-bottom: 0;
+        width: 173px;
+        height: 37px;
+        color: var(--main-color);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        transition: 0.2s linear;
+        margin-top: 10px;
+        left: 0;
+        background-color: transparent;
+    }
+    .get section .button input{
+        background-color: transparent;
+        color: var(--light-white);
+        border: 1px solid transparent;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .get section .button{
+        background-color: transparent;
+    }
+    .get section .button:hover{
+        background-color: var(--main-color);
+    }
+    .get section .button input:hover{
+        color: var(--white);
+        background-color: var(--main-color);
+    }
+    
+    
+}
+
+/*======================================footer page==========================================*/
+
+footer{
+   
+    background-image: url("../photos/2207_w054_n005_103b_p1_103.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 346px;
+    background-blend-mode: multiply;
+}
+footer .container{
+    background-color: #00000054;
+    width: 100%;
+    height: 346px;
+    display: grid;
+    justify-content: center;
+}
+footer section{
+    display: flex;
+    gap:185px;
+}
+footer h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-top: 10px;
+    padding-top: 28px;
+}
+
+footer section .link{
+    display: grid;
+}
+footer section .link h2{
+    color: var(--main-color);
+    font-size: 23px;
+    text-transform: capitalize;
+    text-align: center;
+}
+footer section .link p{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+}
+footer section .link a{
+    color: var(--white);
+    text-decoration: none;
+    transition: text-decoration 0.3s linear;
+    font-size: 16px;
+}
+footer section .link a:hover{
+    text-decoration:underline;
+}
+footer section .link .icons{
+    font-size: 25px;
+    text-align: center;
+}
+footer section .link .icons i{
+    border-radius: 50px 50px;
+    background-color: var(--white);
+    padding: 5px;
+    transition: 0.3s;
+    color: black;
+}
+footer section .link .icons i:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+
+
+@media (max-width:576px){
+    footer{
+   
+        background-image: url("../photos/2207_w054_n005_103b_p1_103.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 800px;
+        background-blend-mode: multiply;
+    }
+    footer .container{
+        background-color: #00000054;
+        width: 100%;
+        height: 800px;
+        display: grid;
+        justify-content: center;
+    }
+    footer section{
+       display: grid;
+       gap: 93px;
+    }
+    footer h1{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: capitalize;
+        color: var(--main-color);
+        margin-top: 10px;
+        padding-top: 28px;
+    }
+    
+    footer section .link{
+        display: grid;
+        justify-content: center;
+    }
+    footer section .link h2{
+        color: var(--main-color);
+        font-size: 23px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    footer section .link p{
+        color: var(--white);
+        text-transform: capitalize;
+        font-size: 20px;
+        text-align: center;
+    }
+    footer section .link a{
+        color: var(--white);
+        text-decoration: none;
+        transition: text-decoration 0.3s linear;
+        font-size: 16px;
+    }
+    footer section .link a:hover{
+        text-decoration:underline;
+    }
+    footer section .link .icons{
+        font-size: 25px;
+        text-align: center;
+    }
+    footer section .link .icons i{
+        border-radius: 50px 50px;
+        background-color: var(--white);
+        padding: 5px;
+        transition: 0.3s;
+        color: black;
+    }
+    footer section .link .icons i:hover{
+        background-color: var(--main-color);
+        color: var(--white);
+    }
+    
+    
+}
+
+
+
+
